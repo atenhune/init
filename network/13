@@ -1,0 +1,2 @@
+# Thanks to the previous question and the reverse DNS find the name of your host
+ipconfig getpacket en0 | grep "yiaddr" | awk '{print $3}' | nslookup | grep name | awk '{print $4}'
