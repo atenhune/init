@@ -1,0 +1,4 @@
+# Name the command that determines the state of the SSH service.
+sudo service status ssh 
+or
+sudo systemctl status ssh

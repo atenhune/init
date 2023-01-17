@@ -1,0 +1,2 @@
+# Find the command that kills the background command’s process
+sudo kill -9 (PID) or sudo pkill -9 tail (in case of the previous question)
