@@ -1,5 +1,5 @@
 # Find the command that allows you to connect via ssh on the VM. (In parallel with
 # the graphic session)
-1. install ssh (sudo apt install openssh-server)
-2. open port for guest using VMs IP
-3. use command to connect to VM (ssh antti@127.0.0.1 -p 22)
+1. install ssh 
+2. Go to VMs network settings and set up port fowarding or use bridged adapter
+3. use command to connect to VM      ssh [user]@[ip] -p [port]

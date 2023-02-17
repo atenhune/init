@@ -1,2 +1,5 @@
 # Find the command that kills the background command’s process
-sudo kill -9 (PID) or sudo pkill -9 tail (in case of the previous question)
+sudo kill (PID) or sudo pkill -9 (PID)
+
+# to find out the PID relating to previous question
+# ps -aux | grep "\-f /var/log/syslog" | grep -m1 -v "grep" | awk '{print $2}'
