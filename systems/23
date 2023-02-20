@@ -1,1 +1,8 @@
 # Explain how connect yourself as new user. (With graphic session and ssh session)
+1. Add user with useradd
+2. su username
+
+ssh:
+Add that user to sudoers file on the remote server
+Add your public key (~/.ssh/id_rsa.pub) to the new user's ~/.ssh/authorized_keys file on the remote server
+Connect with command: ssh username@[ip] -p [port]

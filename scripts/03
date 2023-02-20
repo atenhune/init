@@ -1,0 +1,26 @@
+#!/bin/bash
+
+tput civis -- invisible
+progress=0
+
+while [ $progress -le 100 ]
+do
+	i=0
+	while [ $i -le 100 ]
+	do
+		if [ $i -le $progress ]
+		then
+			printf '\033[42;32m%s\033[0m' " "
+		else
+			printf "\033[100;32m%s\033[0m" " "
+		fi
+		i=$(( $i + 1 ))
+	done
+	printf " %3d%%" $progress
+	printf "\r"
+	sleep 0.01
+	progress=$(( $progress + 1 ))
+
+done
+	printf "\n"
+tput cnorm
